@@ -141,7 +141,7 @@
         </div>
     </header>
 
-    <div class="h-full py-20">
+    <div class="h-full py-5 sm:py-20">
         <div class="mx-5 sm:mx-20">
             <h1 class="font-bold roboto font">ABOUT US</h1>
             <p class="text-[35px] sm:text-[40px] heading">Escape to Celestre—where luxury, tranquility, and breathtaking beauty create unforgettable moments</p>
@@ -332,6 +332,88 @@
     </div>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d492.7443858370485!2d76.56899510560872!3d8.88376800175612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1743244657530!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer class="bg-[#4b3336] p-5 sm:p-20 text-white/70 roboto">
+        <div class="grid sm:grid-cols-2 gap-10">
+            <div class="flex flex-col gap-10">
+                <div class="flex flex-col gap-5">
+                    <img class="h-[200px] w-[400px]" src="{% static "images/POOL VILLAS.png" %}" alt="">
+                    <p class="text-[20px]">An Exclusive Escape, Wrapped in Elegance</p>
+                </div>
+
+                <div class="bg-[#eee4e3] p-5 text-black rounded-2xl">
+                    <div>
+                        <div class="flex gap-5 w-full">
+                            <div class="w-full">
+                                <label for="first-name" class="block text-sm/6 font-semibold text-gray-900">First name</label>
+                                <div class="mt-2.5">
+                                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#c9505c]">
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <label for="last-name" class="block text-sm/6 font-semibold text-gray-900">Last name</label>
+                                <div class="mt-2.5">
+                                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#c9505c]">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sm:col-span-2">
+                            <label for="email" class="block text-sm/6 font-semibold text-gray-900">Email</label>
+                            <div class="mt-2.5">
+                              <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#c9505c]">
+                            </div>
+                        </div>
+
+                        <div class="mt-10">
+                            <button type="submit" class="block w-full rounded-md bg-[#c9505c] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-[#c9505cbf] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c9505c]">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                  
+            </div>
+            <div class="flex flex-col justify-between">
+                <div class="flex flex-col gap-5">
+                    <div class="flex gap-10">
+                        <p>example@example.com</p>
+                        <p>+91 1234567890</p>
+                    </div>
+                    <p>VHPC+FC4, Thangassery Rd, Thangasherry East, Thangassery, Kollam, Kerala 691007</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores nostrum numquam quasi quas a, voluptatibus veniam dignissimos deserunt mollitia suscipit fugiat animi ad totam. Similique, illo debitis enim ut eius eum. Velit, et cum culpa ducimus voluptatum maiores eum nemo in fugiat. At cumque nisi autem excepturi esse eveniet.</p>
+                    <div class="w-full bg-white/50 h-[0.5px]"></div>
+                </div>
+
+                <div class="grid sm:grid-cols-3 gap-3">
+                    <div class="flex flex-col justify-between">
+                        <p class="text-[20px]">Social Media</p>
+
+                        <div class="flex gap-2 items-center"><i class="ri-facebook-circle-fill text-[25px]"></i> Facebook</div>
+                        <div class="flex gap-2 items-center"> <i class="ri-instagram-line text-[25px]"></i> Instagram</div>
+                        <div class="flex gap-2 items-center"> <i class="ri-youtube-line text-[25px]"></i>YouTube</div>
+                        <div class="flex gap-2 items-center"><i class="ri-linkedin-box-fill text-[25px]"></i>LinkedIn</div>
+                    </div>
+
+                    <div class="flex flex-col justify-between">
+                        <p class="text-[20px]">Services</p>
+
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="flex flex-col justify-between">
+                        <p class="text-[20px]">Quick Links</p>
+
+                        <p>Home</p>
+                        <p>About Us</p>
+                        <p>Services</p>
+                        <p>Gallery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="{% static "js/main.js" %}"></script>
