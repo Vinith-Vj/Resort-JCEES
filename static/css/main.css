@@ -263,6 +263,24 @@
   .row-start-1 {
     grid-row-start: 1;
   }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
   .mx-5 {
     margin-inline: calc(var(--spacing) * 5);
   }
@@ -356,6 +374,9 @@
   .h-\[130px\] {
     height: 130px;
   }
+  .h-\[150px\] {
+    height: 150px;
+  }
   .h-\[200px\] {
     height: 200px;
   }
@@ -370,6 +391,18 @@
   }
   .h-\[900px\] {
     height: 900px;
+  }
+  .h-\[950px\] {
+    height: 950px;
+  }
+  .h-\[1000px\] {
+    height: 1000px;
+  }
+  .h-\[1100px\] {
+    height: 1100px;
+  }
+  .h-\[1200px\] {
+    height: 1200px;
   }
   .h-full {
     height: 100%;

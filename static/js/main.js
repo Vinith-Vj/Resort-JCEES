@@ -5,6 +5,14 @@ menuIcon.addEventListener('click', () => {
     menu.classList.toggle('-translate-x-full'); // Toggle the class to slide in/out
 });
 
+// Listen for clicks on the document
+document.addEventListener('click', (event) => {
+    // Check if the clicked element is NOT the menu or menuIcon
+    if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+        menu.classList.add('-translate-x-full'); // Close the menu
+    }
+});
+
 const dropdownButton = document.getElementById('dropdownButton');
 const dropdownMenu = document.getElementById('dropdownMenu');
 
