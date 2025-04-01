@@ -1,31 +1,35 @@
-const menuIcon = document.getElementById('menuIcon');
-const menu = document.getElementById('menu');
+document.addEventListener("DOMContentLoaded", () => {
+    const menuIcon = document.getElementById('menuIcon');
+    const menu = document.getElementById('menu');
 
-menuIcon.addEventListener('click', () => {
-    menu.classList.toggle('-translate-x-full'); // Toggle the class to slide in/out
-});
+    if (menuIcon && menu) { // ✅ Prevents errors if elements don't exist
+        menuIcon.addEventListener('click', () => {
+            menu.classList.toggle('-translate-x-full'); // Toggle the class
+        });
 
-// Listen for clicks on the document
-document.addEventListener('click', (event) => {
-    // Check if the clicked element is NOT the menu or menuIcon
-    if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
-        menu.classList.add('-translate-x-full'); // Close the menu
+        document.addEventListener('click', (event) => {
+            if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+                menu.classList.add('-translate-x-full');
+            }
+        });
+    }
+
+    const dropdownButton = document.getElementById('dropdownButton');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    if (dropdownButton && dropdownMenu) { // ✅ Prevents errors if elements don't exist
+        dropdownButton.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden'); // Show/hide menu
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+            }
+        });
     }
 });
 
-const dropdownButton = document.getElementById('dropdownButton');
-const dropdownMenu = document.getElementById('dropdownMenu');
-
-dropdownButton.addEventListener('click', () => {
-    dropdownMenu.classList.toggle('hidden'); // Show/hide menu
-});
-
-// Close dropdown when clicking outside
-document.addEventListener('click', (event) => {
-    if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
-        dropdownMenu.classList.add('hidden');
-    }
-});
 
 flatpickr("#checkin-date", {
     enableTime: false,
