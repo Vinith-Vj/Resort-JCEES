@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{% static "css/style.css" %}">
     <link rel="stylesheet" href="{% static "css/main.css" %}">
 </head>
-<body class="scroll-smooth">
+<body>
     <header class="relative w-full h-full sm:h-screen">
         <!-- Video Background -->
         <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
@@ -28,7 +28,7 @@
     
         <!-- Content -->
         <div class="relative z-10 h-full text-white text-center w-full">
-            <nav class="fixed top-0 w-full h-[50px] border-b border-white/50 flex items-center px-15">
+            <nav class="fixed top-0 w-full h-[50px] border-b border-white/50 flex items-center px-5 sm:px-15">
                 <div class="flex justify-between w-full items-center">
                     <div class="hidden md:flex gap-5 text-[12px] font-medium text-[#ffffff91]">
                         <a class="hover:text-white transition duration-300" href="">HOME</a>
@@ -63,9 +63,9 @@
                 </div>
             </nav>
 
-            <div class="flex flex-col justify-end h-[1100px] sm:h-full items-center w-full">
-                <div class="grid grid-cols-1 sm:grid-cols-2 mx-5 sm:mx-20">
-                    <div class="flex flex-col gap-5 mb-5 sm:mb-0">
+            <div class="flex flex-col justify-end h-[1100px] sm:h-full items-center w-full pt-[150px]">
+                <div class="grid grid-cols-1 sm:grid-cols-2 mx-5 sm:mx-20 gap-10 sm:gap-0">
+                    <div class="flex flex-col gap-10 sm:gap-5 mb-5 sm:mb-0">
                         <h1 class="text-[35px] sm:text-[60px] text-left heading">
                             Unforgettable Stays in Timeless Elegance
                         </h1>
@@ -79,7 +79,7 @@
                                                             
                         </div>
                     </div>
-                    <div class="flex flex-col justify-end gap-5">
+                    <div class="flex flex-col justify-end gap-10 sm:gap-5">
                         <div class="flex gap-5 justify-end heading">
                             <h1> &#10004; Luxury Stays</h1>
                             <h1> &#10004; Gourmet Dining</h1>
@@ -88,7 +88,7 @@
                         <p class="text-left text-white/50">Experience unmatched luxury and serenity at Celestre – where elegance, comfort, and breathtaking landscapes create unforgettable memories</p>
                     </div>
                 </div>
-                <div class="border-2 rounded border-white/20 w-[90%] mt-20 mb-5 p-2 flex flex-col sm:flex-row justify-between items-center heading">
+                <div class="border-2 rounded-2xl border-white/20 w-[90%] mt-20 mb-5 p-2 flex flex-col sm:flex-row justify-between items-center heading">
                     <div class="border-b border-r-0 sm:border-b-0 sm:border-r border-white/30 p-5 w-full">
                         <p>Guest</p>
                         <div class="relative inline-block text-left w-full">
@@ -99,7 +99,7 @@
                             </button>
                         
                             <!-- Dropdown Menu -->
-                            <div id="dropdownMenu" class="absolute left-0 mt-2 w-48 bg-white border border-gray-300 shadow-md rounded-md hidden transition-transform duration-300">
+                            <div id="dropdownMenu" class="absolute left-0 mt-2 w-48 bg-white border border-gray-300 shadow-md rounded-md hidden transition-transform duration-300 z-[100]">
                                 <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 1</a>
                                 <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 2</a>
                                 <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 3</a>
