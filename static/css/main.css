@@ -318,6 +318,9 @@
   .h-\[500px\] {
     height: 500px;
   }
+  .h-\[550px\] {
+    height: 550px;
+  }
   .h-\[800px\] {
     height: 800px;
   }
@@ -524,6 +527,15 @@
   .bg-white\/50 {
     background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
   }
+  .bg-\[url\(\"\.\.\/static\/images\/img-3\.jpg\"\)\] {
+    background-image: url("../static/images/img-3.jpg");
+  }
+  .bg-\[url\(\"images\/img-3\.jpg\"\)\] {
+    background-image: url("images/img-3.jpg");
+  }
+  .bg-\[url\(\"static\/images\/img-3\.jpg\"\)\] {
+    background-image: url("static/images/img-3.jpg");
+  }
   .bg-\[url\(\'https\:\/\/images\.pexels\.com\/photos\/91227\/pexels-photo-91227\.jpeg\'\)\] {
     background-image: url('https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg');
   }
@@ -559,6 +571,15 @@
   }
   .bg-\[url\(\'https\:\/\/img\.freepik\.com\/free-photo\/swimming-pool_74190-2104\.jpg\?t\=st\=1743149375\~exp\=1743152975\~hmac\=cd26be5418b64caf74ae67f11f79f6085c5013c6d84397419dcb894ba84d606d\&w\=1380\'\)\] {
     background-image: url('https://img.freepik.com/free-photo/swimming-pool_74190-2104.jpg?t=st=1743149375~exp=1743152975~hmac=cd26be5418b64caf74ae67f11f79f6085c5013c6d84397419dcb894ba84d606d&w=1380');
+  }
+  .bg-\[url\(\.\.\/static\/images\/img-3\.jpg\)\] {
+    background-image: url(../static/images/img-3.jpg);
+  }
+  .bg-\[url\(\/static\/images\/img-3\.jpg\)\] {
+    background-image: url(/static/images/img-3.jpg);
+  }
+  .bg-\[url\(static\/images\/img-3\.jpg\)\] {
+    background-image: url(static/images/img-3.jpg);
   }
   .bg-cover {
     background-size: cover;
@@ -704,6 +725,12 @@
   }
   .text-black\/50 {
     color: color-mix(in oklab, var(--color-black) 50%, transparent);
+  }
+  .text-black\/60 {
+    color: color-mix(in oklab, var(--color-black) 60%, transparent);
+  }
+  .text-black\/80 {
+    color: color-mix(in oklab, var(--color-black) 80%, transparent);
   }
   .text-gray-500 {
     color: var(--color-gray-500);
