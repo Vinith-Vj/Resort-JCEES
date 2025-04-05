@@ -237,8 +237,20 @@
   .z-\[200\] {
     z-index: 200;
   }
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .m-7 {
+    margin: calc(var(--spacing) * 7);
+  }
   .mx-5 {
     margin-inline: calc(var(--spacing) * 5);
+  }
+  .mx-40 {
+    margin-inline: calc(var(--spacing) * 40);
   }
   .mx-auto {
     margin-inline: auto;
@@ -275,6 +287,12 @@
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-9 {
+    margin-bottom: calc(var(--spacing) * 9);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
   }
   .block {
     display: block;
@@ -329,6 +347,9 @@
   .h-\[150px\] {
     height: 150px;
   }
+  .h-\[200px\] {
+    height: 200px;
+  }
   .h-\[250px\] {
     height: 250px;
   }
@@ -340,6 +361,9 @@
   }
   .h-\[550px\] {
     height: 550px;
+  }
+  .h-\[600px\] {
+    height: 600px;
   }
   .h-\[800px\] {
     height: 800px;
@@ -615,6 +639,15 @@
   .bg-\[url\(\"https\:\/\/travelsetu\.com\/apps\/uploads\/new_destinations_photos\/destination\/2023\/12\/15\/ed4e5844df8201e480059b18e40f5947_1000x1000\.jpg\"\)\] {
     background-image: url("https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/15/ed4e5844df8201e480059b18e40f5947_1000x1000.jpg");
   }
+  .bg-\[url\(\'\/static\/images\/img-4\.jpeg\'\)\] {
+    background-image: url('/static/images/img-4.jpeg');
+  }
+  .bg-\[url\(\'\/static\/images\/img-10\.jpeg\'\)\] {
+    background-image: url('/static/images/img-10.jpeg');
+  }
+  .bg-\[url\(\'\/static\/images\/img-21\.jpeg\'\)\] {
+    background-image: url('/static/images/img-21.jpeg');
+  }
   .bg-\[url\(\'https\:\/\/dynamic-media-cdn\.tripadvisor\.com\/media\/photo-o\/10\/be\/73\/88\/img-20170911-wa0033-largejpg\.jpg\?w\=1100\&h\=600\&s\=1\'\)\] {
     background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/be/73/88/img-20170911-wa0033-largejpg.jpg?w=1100&h=600&s=1');
   }
@@ -651,11 +684,23 @@
   .bg-\[url\(\/static\/images\/img-3\.jpg\)\] {
     background-image: url(/static/images/img-3.jpg);
   }
+  .bg-\[url\(\/static\/images\/img-9\.jpeg\)\] {
+    background-image: url(/static/images/img-9.jpeg);
+  }
+  .bg-\[url\(\/static\/images\/img-13\.jpeg\)\] {
+    background-image: url(/static/images/img-13.jpeg);
+  }
+  .bg-\[url\(https\:\/\/cosatravel\.ch\/wp-content\/uploads\/2023\/08\/kerala-wooden-boat-nature-1440x810\.jpg\)\] {
+    background-image: url(https://cosatravel.ch/wp-content/uploads/2023/08/kerala-wooden-boat-nature-1440x810.jpg);
+  }
   .bg-\[url\(https\:\/\/images\.mercuryholidays\.co\.uk\/cms\/36796\/44631942-kerala-private-tours\.jpg\?w\=1920\)\] {
     background-image: url(https://images.mercuryholidays.co.uk/cms/36796/44631942-kerala-private-tours.jpg?w=1920);
   }
   .bg-\[url\(https\:\/\/travelsetu\.com\/apps\/uploads\/new_destinations_photos\/destination\/2023\/12\/15\/ed4e5844df8201e480059b18e40f5947_1000x1000\.jpg\)\] {
     background-image: url(https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/15/ed4e5844df8201e480059b18e40f5947_1000x1000.jpg);
+  }
+  .bg-\[url\(https\:\/\/www\.vacationstravel\.com\/wp-content\/uploads\/2017\/07\/103_Kerala_Skouatroulio_iStock-534757407x4\.jpg\)\] {
+    background-image: url(https://www.vacationstravel.com/wp-content/uploads/2017/07/103_Kerala_Skouatroulio_iStock-534757407x4.jpg);
   }
   .bg-cover {
     background-size: cover;
@@ -671,6 +716,9 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -850,6 +898,9 @@
   }
   .opacity-70 {
     opacity: 70%;
+  }
+  .opacity-90 {
+    opacity: 90%;
   }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -1071,6 +1122,11 @@
   .sm\:h-\[400px\] {
     @media (width >= 40rem) {
       height: 400px;
+    }
+  }
+  .sm\:h-\[500px\] {
+    @media (width >= 40rem) {
+      height: 500px;
     }
   }
   .sm\:h-\[600px\] {
