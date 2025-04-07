@@ -16,6 +16,20 @@
     <link rel="stylesheet" href="{% static "css/main.css" %}">
 </head>
 <body>
+    <div class="fixed bottom-10 right-5 z-10">
+        <div class="relative">
+          <!-- Pulse Circle -->
+          <span class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
+      
+          <!-- WhatsApp Button -->
+          <div class="relative bg-[#24cc63] rounded-full h-[50px] w-[50px] flex justify-center items-center">
+            <a href="https://wa.me/9895612402" target="_blank" class="flex gap-2 items-center">
+              <i class="ri-whatsapp-line text-white text-[30px]"></i>
+            </a>
+          </div>
+        </div>
+    </div>
+      
     <header class="relative w-full h-full sm:h-screen">
         <!-- Video Background -->
         <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
@@ -27,7 +41,7 @@
         <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
     
         <!-- Content -->
-        <div class="relative z-10 h-full text-white text-center w-full">
+        <div class="relative z-20 h-full text-white text-center w-full">
             <nav class="fixed top-0 w-full h-[50px] border-b border-white/50 flex items-center px-5 sm:px-15 z-[100]">
                 <div class="flex justify-between w-full items-center">
                     <div class="hidden md:flex gap-5 text-[12px] font-medium text-[#ffffff91]">
@@ -172,7 +186,7 @@
                 <p class="text-black/50 text-[18px]">"Nestled in the heart of Tangasseri, our centuries-old ancestral home is surrounded by lush coconut palms and the shimmering turquoise waters of the Arabian Sea. This charming coastal town, affectionately known as Tangy, sits at the southern tip of Kollam (Quilon) in Kerala, South India. Tangasseri (or Thangassery) offers a unique glimpse into Kerala’s rich heritage—God’s Own Country—where winding streets, fresh seafood, and warm-hearted locals create an unforgettable experience. Just a short walk from Tangasseri’s historic churches and its iconic lighthouse, JC Dale Pool Villa provides the perfect getaway for both short and long stays. Come and experience the essence of The Good Life at Tangy with us!"</p>
                 <div class="flex gap-5 flex-wrap mt-10">
                     <div class="bg-[url('https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Flarge-desktop%2Fruins-of-thangassery-fort-1729243963_50c8e91671a10302a9a8.webp&w=1920&q=75')] h-[100px] w-[100px] bg-cover bg-center rounded-full"></div>
-                    <div class="bg-[url('https://scontent.ftrv6-1.fna.fbcdn.net/v/t39.30808-6/474592688_122193606548060708_8148569151790203459_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pt4n8sSYdu4Q7kNvgEnI5vn&_nc_oc=AdmqAmL9E8F5Lz-K8McNFVu9rjY7NqhZ02j22OpaW2leKpSVm-dbrEQ4x7ZDAl6RoTc&_nc_zt=23&_nc_ht=scontent.ftrv6-1.fna&_nc_gid=8eYDqzCMcsyqauaMVBKsyw&oh=00_AYELuITjf08Ej6_wwC3IT1D0AfLuggE5fcuR8MRR9IC1Ig&oe=67F17E76')] h-[100px] w-[100px] bg-cover bg-center rounded-full"></div>
+                    <div class="bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLVKPxVD0jjMwjpxL3oTqCvk9fUEjuadG5Mw&s')] h-[100px] w-[100px] bg-cover bg-center rounded-full"></div>
                     <div class="bg-[url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/be/73/88/img-20170911-wa0033-largejpg.jpg?w=1100&h=600&s=1')] h-[100px] w-[100px] bg-cover bg-center rounded-full"></div>
                     <div class="bg-[url('https://thumbs.dreamstime.com/b/thangassery-lighthouse-cliff-surrounded-palm-trees-big-sea-waves-kollam-beach-kerala-india-red-white-stripe-90512850.jpg')] h-[100px] w-[100px] bg-cover bg-center rounded-full"></div>
                 </div>
@@ -417,88 +431,91 @@
             <h1 class="font-bold roboto font">CONTACT US</h1>
             <p class="text-[30px] sm:text-[40px] heading mb-10">Book Your Stay – Experience Comfort & Luxury</p>
 
-            <div class="grid sm:grid-cols-2">
-                <div class="flex flex-col gap-5">
-                    <div class="grid sm:grid-cols-2 gap-5">
-                        <div class="flex flex-col sm:flex-row gap-5">
-                            <div class="w-full">
-                                <label for="first-name" class="block text-sm/6 font-semibold text-gray-900">First name</label>
-                                <div class="mt-2.5">
-                                  <input type="text" name="first-name" id="first-name" placeholder="Bruno" autocomplete="given-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black">
+            <div class="grid sm:grid-cols-3">
+                <div class="col-span-2">
+                    <div class="flex flex-col gap-5">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div class="flex flex-col sm:flex-row gap-5">
+                                <div class="w-full">
+                                    <label for="first-name" class="block text-sm/6 font-semibold text-gray-900">First name</label>
+                                    <div class="mt-2.5">
+                                    <input type="text" name="first-name" id="first-name" placeholder="Bruno" autocomplete="given-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black">
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <label for="last-name" class="block text-sm/6 font-semibold text-gray-900">Last name</label>
+                                    <div class="mt-2.5">
+                                    <input type="text" name="last-name" id="last-name" placeholder="Mars" autocomplete="family-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black">
+                                    </div>
                                 </div>
                             </div>
                             <div class="w-full">
-                                <label for="last-name" class="block text-sm/6 font-semibold text-gray-900">Last name</label>
+                                <label for="email" class="block text-sm/6 font-semibold text-gray-900">Email</label>
                                 <div class="mt-2.5">
-                                  <input type="text" name="last-name" id="last-name" placeholder="Mars" autocomplete="family-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black">
+                                    <input type="email" name="email" id="email" placeholder="example123@gmail.com" autocomplete="email" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black">
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full">
-                            <label for="email" class="block text-sm/6 font-semibold text-gray-900">Email</label>
-                            <div class="mt-2.5">
-                                <input type="email" name="email" id="email" placeholder="example123@gmail.com" autocomplete="email" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black">
+            
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div class="flex gap-5"> 
+                                <div class="border-b border-r-0 sm:border-b-0 sm:border-r border-white/30 w-full">
+                                    <p class="mb-2 block text-sm/6 font-semibold text-gray-900">Check In</p>
+                                    <div class="relative max-w-sm">
+                                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 1 0 0-2Z"/>
+                                            </svg>
+                                        </div>
+                                        <input id="checkin-date" type="text" class="bg-transparent border text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full ps-10 p-2.5 border-black/20" placeholder="Select date">
+                                    </div>
+                                </div>
+                                <div class="border-b border-r-0 sm:border-b-0 sm:border-r border-white/30 w-full">
+                                    <p class="mb-2 block text-sm/6 font-semibold text-gray-900">Check Out</p>
+                                    <div class="relative max-w-sm">
+                                        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 1 0 0-2Z"/>
+                                            </svg>
+                                        </div>
+                                        <input id="checkin-date" type="text" class="bg-transparent border text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full ps-10 p-2.5 border-black/20" placeholder="Select date">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="w-full">
+                                    <label for="guests" class="block text-sm/6 font-semibold text-gray-900">Number of Guest's</label>
+                                    <div class="mt-2.5">
+                                        <input type="email" name="email" id="email" placeholder="eg:5" autocomplete="guests" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black">
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <label for="phn" class="block text-sm/6 font-semibold text-gray-900">Phone no</label>
+                                    <div class="mt-2.5">
+                                        <input type="email" name="email" id="email" placeholder="+91 7373069866" autocomplete="phn" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
         
-                    <div class="grid sm:grid-cols-2 gap-5">
-                        <div class="flex gap-5"> 
-                            <div class="border-b border-r-0 sm:border-b-0 sm:border-r border-white/30 w-full">
-                                <p class="mb-2 block text-sm/6 font-semibold text-gray-900">Check In</p>
-                                <div class="relative max-w-sm">
-                                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 1 0 0-2Z"/>
-                                        </svg>
-                                    </div>
-                                    <input id="checkin-date" type="text" class="bg-transparent border text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full ps-10 p-2.5 border-black/20" placeholder="Select date">
-                                </div>
-                            </div>
-                            <div class="border-b border-r-0 sm:border-b-0 sm:border-r border-white/30 w-full">
-                                <p class="mb-2 block text-sm/6 font-semibold text-gray-900">Check Out</p>
-                                <div class="relative max-w-sm">
-                                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 1 0 0-2Z"/>
-                                        </svg>
-                                    </div>
-                                    <input id="checkin-date" type="text" class="bg-transparent border text-gray-900 text-sm rounded-lg focus:ring-blue-500 block w-full ps-10 p-2.5 border-black/20" placeholder="Select date">
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="flex gap-5">
-                            <div class="w-full">
-                                <label for="guests" class="block text-sm/6 font-semibold text-gray-900">Number of Guest's</label>
-                                <div class="mt-2.5">
-                                    <input type="email" name="email" id="email" placeholder="eg:5" autocomplete="guests" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black">
-                                </div>
-                            </div>
-                            <div class="w-full">
-                                <label for="phn" class="block text-sm/6 font-semibold text-gray-900">Phone no</label>
-                                <div class="mt-2.5">
-                                    <input type="email" name="email" id="email" placeholder="+91 7373069866" autocomplete="phn" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black">
-                                </div>
+                        
+                        <div class="w-full">
+                            <label for="message" class="block text-sm/6 font-semibold text-gray-900">Message</label>
+                            <div class="mt-2.5">
+                                <input type="text" name="last-name" id="last-name" placeholder="" autocomplete="family-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black h-[150px] sm:h-[250px]">
                             </div>
                         </div>
+        
+                        <button type="submit" class="bg-green-500/30 hover:bg-blue-50 text-black font-semibold py-2 px-4 rounded-md transition duration-300 cursor-pointer w-[150px]">
+                            Submit
+                        </button>
+        
                     </div>
-    
-                    
-                    <div class="w-full">
-                        <label for="message" class="block text-sm/6 font-semibold text-gray-900">Message</label>
-                        <div class="mt-2.5">
-                            <input type="text" name="last-name" id="last-name" placeholder="" autocomplete="family-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-black h-[150px] sm:h-[250px]">
-                        </div>
-                    </div>
-    
-                    <button type="submit" class="bg-green-500/30 hover:bg-blue-50 text-black font-semibold py-2 px-4 rounded-md transition duration-300 cursor-pointer w-[150px]">
-                        Submit
-                    </button>
-    
                 </div>
-
-                <img class="h-[550px] hidden sm:block" src="https://bootstrapmade.com/content/demo/Blogy/assets/img/cta/cta-1.webp" alt="">
+                <div class="col-span-1">
+                    <img class="h-[550px] hidden sm:block" src="https://bootstrapmade.com/content/demo/Blogy/assets/img/cta/cta-1.webp" alt="">
+                </div>
             </div>
 
             
