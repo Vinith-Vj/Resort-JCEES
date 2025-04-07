@@ -439,6 +439,9 @@
   .w-\[190px\] {
     width: 190px;
   }
+  .w-\[200px\] {
+    width: 200px;
+  }
   .w-\[300px\] {
     width: 300px;
   }
@@ -1079,6 +1082,11 @@
       display: flex;
     }
   }
+  .sm\:h-\[150px\] {
+    @media (width >= 40rem) {
+      height: 150px;
+    }
+  }
   .sm\:h-\[230px\] {
     @media (width >= 40rem) {
       height: 230px;
@@ -1122,6 +1130,11 @@
   .sm\:w-\[270px\] {
     @media (width >= 40rem) {
       width: 270px;
+    }
+  }
+  .sm\:w-\[300px\] {
+    @media (width >= 40rem) {
+      width: 300px;
     }
   }
   .sm\:w-\[350px\] {
