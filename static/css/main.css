@@ -332,11 +332,20 @@
   .h-\[60px\] {
     height: 60px;
   }
+  .h-\[70px\] {
+    height: 70px;
+  }
+  .h-\[80px\] {
+    height: 80px;
+  }
   .h-\[100px\] {
     height: 100px;
   }
   .h-\[130px\] {
     height: 130px;
+  }
+  .h-\[140px\] {
+    height: 140px;
   }
   .h-\[150px\] {
     height: 150px;
@@ -361,6 +370,9 @@
   }
   .h-\[900px\] {
     height: 900px;
+  }
+  .h-\[full\] {
+    height: full;
   }
   .h-full {
     height: 100%;
@@ -400,6 +412,9 @@
   }
   .w-\[190px\] {
     width: 190px;
+  }
+  .w-\[300px\] {
+    width: 300px;
   }
   .w-\[400px\] {
     width: 400px;
