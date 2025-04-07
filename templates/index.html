@@ -532,23 +532,23 @@
     <footer class="bg-[url(/static/images/img-13.jpeg)] relative bg-fixed bg-cover bg-center bg-no-repeat p-5 sm:p-20 text-white/70 roboto" id="contact">
         <div class="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
         <div class="grid sm:grid-cols-2 gap-10 relative z-10">
-            <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-5 justify-center items-center">
                 <img class="h-[150px] w-[300px]" src="{% static "images/LC.png" %}" alt="">
                 {% comment %} <p class="text-[20px]">An Exclusive Escape, Wrapped in Elegance</p> {% endcomment %}
                 <p>VHPC+FC4, Thangassery Rd, Thangasherry East, Thangassery, Kollam, Kerala 691007</p>
             </div>
             
 
-            <div class="grid sm:grid-cols-3 gap-5 sm:gap-3">
+            <div class="grid sm:grid-cols-3 gap-5 sm:gap-3 place-items-center">
                 
-                <div class="flex flex-col justify-between col-span-1">
+                {% comment %} <div class="hidden sm:flex flex-col justify-between col-span-1">
                     <p class="text-[20px]">Quick Links</p>
 
                     <p>Home</p>
                     <p>About Us</p>
                     <p>Services</p>
                     <p>Gallery</p>
-                </div>
+                </div> {% endcomment %}
 
                 <div class="flex gap-3 col-span-2">
                     <div class="flex flex-col justify-between">
@@ -556,10 +556,16 @@
                     </div>
     
                     <div class="flex flex-col justify-between">
-                        <div class="flex gap-2 items-center"><i class="ri-facebook-circle-fill text-[25px]"></i> Facebook</div>
-                        <div class="flex gap-2 items-center"> <i class="ri-instagram-line text-[25px]"></i> Instagram</div>
+                        <div class="flex justify-center items-center bg-[#0862f7] rounded-[10px] px-2">
+                            <div class="flex gap-2 items-center"><i class="ri-facebook-circle-fill text-[25px]"></i> Facebook</div>
+                        </div>
+                        <div class="flex justify-center items-center bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 rounded-[10px] px-2">
+                            <div class="flex gap-2 items-center"> <i class="ri-instagram-line text-[25px]"></i> Instagram</div>
+                        </div>
                         {% comment %} <div class="flex gap-2 items-center"> <i class="ri-youtube-line text-[25px]"></i>YouTube</div> {% endcomment %}
-                        <a href="https://wa.me/9895612402" target="_blank" class="flex gap-2 items-center"><i class="ri-whatsapp-line text-[25px]"></i>What's App</a>
+                        <div class="flex justify-center items-center bg-[#24cc63] rounded-[10px] px-2">
+                            <a href="https://wa.me/9895612402" target="_blank" class="flex gap-2 items-center"><i class="ri-whatsapp-line text-[25px]"></i>What's App</a>
+                        </div>
                     </div>
                 </div>
 
