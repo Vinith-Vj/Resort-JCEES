@@ -87,3 +87,33 @@ document.addEventListener("DOMContentLoaded", function () {
 // // Pause on hover
 // slideContainer.addEventListener("mouseenter", () => clearInterval(autoSlide));
 // slideContainer.addEventListener("mouseleave", () => autoSlide = setInterval(nextSlide, 3000));
+
+window.addEventListener('scroll', function () {
+    const logo = document.getElementById('logo');
+    const scrollTrigger = window.innerHeight;
+    const navLinks = document.querySelectorAll('.nav-links')
+    const menuIcon = document.getElementById('menuIcon');
+    const defaultSrc = logo.getAttribute('data-src-default');
+    const scrolledSrc = logo.getAttribute('data-src-scrolled');
+    const nav = this.document.getElementById('nav');
+
+    if (window.scrollY >= scrollTrigger) {
+        navLinks.forEach(link => {
+            link.classList.remove('hover:text-white');
+            link.classList.add('text-black', 'hover:text-green/80');
+        })
+        menuIcon.classList.remove('text-white');
+        menuIcon.classList.add('text-black');
+        nav.classList.add('bg-white');
+        logo.src = scrolledSrc;
+    } else {
+        navLinks.forEach(link => {
+            link.classList.remove('text-black', 'hover:text-green/80');
+            link.classList.add('hover:text-white')
+        })
+        menuIcon.classList.remove('text-black');
+        menuIcon.classList.add('text-white');
+        nav.classList.remove('bg-white');
+        logo.src = defaultSrc;
+    }
+});
