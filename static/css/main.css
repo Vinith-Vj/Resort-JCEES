@@ -284,6 +284,9 @@
   .my-20 {
     margin-block: calc(var(--spacing) * 20);
   }
+  .me-5 {
+    margin-inline-end: calc(var(--spacing) * 5);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -661,6 +664,21 @@
   .bg-\[url\(\'\/static\/images\/img-21\.jpeg\'\)\] {
     background-image: url('/static/images/img-21.jpeg');
   }
+  .bg-\[url\(\'\/static\/images\/img-21\.jpg\'\)\] {
+    background-image: url('/static/images/img-21.jpg');
+  }
+  .bg-\[url\(\'\/static\/images\/img-22\.jpeg\'\)\] {
+    background-image: url('/static/images/img-22.jpeg');
+  }
+  .bg-\[url\(\'\/static\/images\/img-22\.jpg\'\)\] {
+    background-image: url('/static/images/img-22.jpg');
+  }
+  .bg-\[url\(\'\/static\/images\/img-23\.jpeg\'\)\] {
+    background-image: url('/static/images/img-23.jpeg');
+  }
+  .bg-\[url\(\'\/static\/images\/img-23\.jpg\'\)\] {
+    background-image: url('/static/images/img-23.jpg');
+  }
   .bg-\[url\(\'https\:\/\/dynamic-media-cdn\.tripadvisor\.com\/media\/photo-o\/10\/be\/73\/88\/img-20170911-wa0033-largejpg\.jpg\?w\=1100\&h\=600\&s\=1\'\)\] {
     background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/be/73/88/img-20170911-wa0033-largejpg.jpg?w=1100&h=600&s=1');
   }
@@ -687,6 +705,12 @@
   }
   .bg-\[url\(\/static\/images\/img-13\.jpeg\)\] {
     background-image: url(/static/images/img-13.jpeg);
+  }
+  .bg-\[url\(\/static\/images\/img-24\.jpg\)\] {
+    background-image: url(/static/images/img-24.jpg);
+  }
+  .bg-\[url\(\/static\/images\/img-25\.jpg\)\] {
+    background-image: url(/static/images/img-25.jpg);
   }
   .bg-\[url\(https\:\/\/images\.mercuryholidays\.co\.uk\/cms\/36796\/44631942-kerala-private-tours\.jpg\?w\=1920\)\] {
     background-image: url(https://images.mercuryholidays.co.uk/cms/36796/44631942-kerala-private-tours.jpg?w=1920);

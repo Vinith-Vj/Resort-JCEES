@@ -33,7 +33,7 @@
     <header class="relative w-full h-full sm:h-screen">
         <!-- Video Background -->
         <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover">
-            <source src="{% static "images/bg-vid.mp4" %}" type="video/mp4">
+            <source src="{% static "images/bg-vid-3.MOV" %}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     
@@ -230,8 +230,8 @@
                 <div class="rounded-2xl sm:bg-green-500/30 sm:p-5">
                     <h4 class="roboto font-bold text-[20px] mb-3 text-black/80">Our newly renovated and generously sized home accommodates up to 6 guests and includes:</h4>
                     <ul class="list-disc list-inside space-y-2 text-black/60">
-                        <li>2 comfortable air-conditioned bedrooms </li>
-                        <li>A dedicated reading room and dressing room </li>
+                        <li>3 comfortable air-conditioned bedrooms</li>
+                        <li>3 modern bathrooms</li>
                         <li>2 modern bathrooms</li>
                         <li>A fully equipped main kitchen</li>
                         <li>A secondary kitchen with a fridge, microwave, crockery and  cutlery</li>
@@ -246,10 +246,10 @@
             <h1 class="font-bold roboto font">Gallery</h1>
             <p class="text-[30px] sm:text-[40px] heading mb-5">Explore stunning moments from our villa</p>
             <div class="grid sm:grid-cols-2 w-full gap-2">
-                <div class="bg-[url(/static/images/img-13.jpeg)] bg-cover bg-center rounded-2xl mb-1 h-[250px] sm:h-[400px] aos"></div>
                 <div class="bg-[url('/static/images/img-21.jpeg')] bg-cover bg-center rounded-2xl mb-1 h-[250px] sm:h-[400px] aos"></div>
-                <div class="bg-[url('/static/images/img-10.jpeg')] bg-cover bg-center rounded-2xl mb-1 h-[250px] sm:h-[400px] aos"></div>
-                <div class="bg-[url('/static/images/img-4.jpeg')] bg-cover bg-center rounded-2xl mb-1 h-[250px] sm:h-[400px] aos"></div>
+                <div class="bg-[url(/static/images/img-25.jpg)] bg-cover bg-center rounded-2xl mb-1 h-[250px] sm:h-[400px] aos"></div>
+                <div class="bg-[url('/static/images/img-22.jpg')] bg-cover bg-center rounded-2xl mb-1 h-[250px] sm:h-[400px] aos"></div>
+                <div class="bg-[url('/static/images/img-23.jpg')] bg-cover bg-center rounded-2xl mb-1 h-[250px] sm:h-[400px] aos"></div>
             </div>
         </div>
 
@@ -264,8 +264,8 @@
                         <p class="text-[30px] roboto">Infinity Pool</p>
                     </div>
                     <div class="flex flex-col gap-5 h-full w-full sm:pr-3">
-                        <img class="rounded-2xl transition-transform duration-300 hover:-translate-y-2 h-full" src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-                        <p class="text-[30px] roboto">Spa & Wellness</p>
+                        <img class="rounded-2xl transition-transform duration-300 hover:-translate-y-2 h-full" src="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                        <p class="text-[30px] roboto">In-House Gym</p>
                     </div>
                     <div class="flex flex-col gap-5 h-full w-full sm:pr-3">
                         <img class="rounded-2xl transition-transform duration-300 hover:-translate-y-2 h-full" src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
@@ -281,7 +281,7 @@
             </div>
         </div>
 
-        <div class="mx-5 sm:mx-20 my-20 bg-[url(/static/images/img-3.jpg)] bg-fixed h-[550px] bg-cover bg-center rounded-2xl text-white p-5 flex justify-center items-center">
+        <div class="mx-5 sm:mx-20 my-20 bg-[url(/static/images/img-24.jpg)] bg-fixed h-[550px] bg-cover bg-center rounded-2xl text-white p-5 flex justify-center items-center">
             <div class="grid sm:grid-cols-2 gap-5 sm:gap-0">
                 <div class="flex flex-col">
                     <h4 class="text-[40px] heading">Start Your Luxurious Experience Today</h4>
@@ -370,7 +370,9 @@
                 </div>
 
                 <div>
-                    <img class="h-[400px] sm:h-[600px] w-full rounded-2xl object-cover" src="https://images.pexels.com/photos/16866482/pexels-photo-16866482/free-photo-of-holidays-tropical-resort.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                    {% comment %} <img class="h-[400px] sm:h-[600px] w-full rounded-2xl object-cover" src="https://images.pexels.com/photos/16866482/pexels-photo-16866482/free-photo-of-holidays-tropical-resort.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""> {% endcomment %}
+
+                    <img class="h-[400px] sm:h-[600px] w-full rounded-2xl object-cover" src="{% static "images/img-26.jpg" %}" alt="">
                 </div>
             </div>
         </div>
