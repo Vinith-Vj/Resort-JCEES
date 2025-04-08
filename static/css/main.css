@@ -694,6 +694,9 @@
   .bg-\[url\(\'\/static\/images\/img-29\.jpg\'\)\] {
     background-image: url('/static/images/img-29.jpg');
   }
+  .bg-\[url\(\'\/static\/images\/img-31\.jpg\'\)\] {
+    background-image: url('/static/images/img-31.jpg');
+  }
   .bg-\[url\(\'https\:\/\/dynamic-media-cdn\.tripadvisor\.com\/media\/photo-o\/10\/be\/73\/88\/img-20170911-wa0033-largejpg\.jpg\?w\=1100\&h\=600\&s\=1\'\)\] {
     background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/be/73/88/img-20170911-wa0033-largejpg.jpg?w=1100&h=600&s=1');
   }
