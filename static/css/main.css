@@ -221,9 +221,6 @@
   .right-5 {
     right: calc(var(--spacing) * 5);
   }
-  .right-10 {
-    right: calc(var(--spacing) * 10);
-  }
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
   }
@@ -346,17 +343,14 @@
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
+  .h-40 {
+    height: calc(var(--spacing) * 40);
+  }
   .h-60 {
     height: calc(var(--spacing) * 60);
   }
-  .h-\[40px\] {
-    height: 40px;
-  }
   .h-\[50px\] {
     height: 50px;
-  }
-  .h-\[60px\] {
-    height: 60px;
   }
   .h-\[70px\] {
     height: 70px;
@@ -370,9 +364,6 @@
   .h-\[130px\] {
     height: 130px;
   }
-  .h-\[140px\] {
-    height: 140px;
-  }
   .h-\[150px\] {
     height: 150px;
   }
@@ -382,11 +373,17 @@
   .h-\[250px\] {
     height: 250px;
   }
+  .h-\[270px\] {
+    height: 270px;
+  }
   .h-\[300px\] {
     height: 300px;
   }
   .h-\[400px\] {
     height: 400px;
+  }
+  .h-\[500px\] {
+    height: 500px;
   }
   .h-\[550px\] {
     height: 550px;
@@ -396,9 +393,6 @@
   }
   .h-\[900px\] {
     height: 900px;
-  }
-  .h-\[full\] {
-    height: full;
   }
   .h-full {
     height: 100%;
@@ -424,9 +418,6 @@
   .w-\[50px\] {
     width: 50px;
   }
-  .w-\[60px\] {
-    width: 60px;
-  }
   .w-\[90\%\] {
     width: 90%;
   }
@@ -441,12 +432,6 @@
   }
   .w-\[200px\] {
     width: 200px;
-  }
-  .w-\[300px\] {
-    width: 300px;
-  }
-  .w-\[400px\] {
-    width: 400px;
   }
   .w-full {
     width: 100%;
@@ -471,6 +456,10 @@
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-full {
+    --tw-translate-y: -100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .transform {
@@ -582,10 +571,6 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
-  .border-8 {
-    border-style: var(--tw-border-style);
-    border-width: 8px;
-  }
   .border-r-0 {
     border-right-style: var(--tw-border-style);
     border-right-width: 0px;
@@ -691,9 +676,6 @@
   .bg-\[url\(\'https\:\/\/img\.freepik\.com\/free-photo\/silhouette-palm-tree-with-umbrella_74190-4056\.jpg\?t\=st\=1743147007\~exp\=1743150607\~hmac\=6af67e881a5daa20858fee8c4e3db7c2a3ca310856b2ab43831100688f9b0728\&w\=1380\'\)\] {
     background-image: url('https://img.freepik.com/free-photo/silhouette-palm-tree-with-umbrella_74190-4056.jpg?t=st=1743147007~exp=1743150607~hmac=6af67e881a5daa20858fee8c4e3db7c2a3ca310856b2ab43831100688f9b0728&w=1380');
   }
-  .bg-\[url\(\'https\:\/\/scontent\.ftrv6-1\.fna\.fbcdn\.net\/v\/t39\.30808-6\/474592688_122193606548060708_8148569151790203459_n\.jpg\?_nc_cat\=111\&ccb\=1-7\&_nc_sid\=833d8c\&_nc_ohc\=pt4n8sSYdu4Q7kNvgEnI5vn\&_nc_oc\=AdmqAmL9E8F5Lz-K8McNFVu9rjY7NqhZ02j22OpaW2leKpSVm-dbrEQ4x7ZDAl6RoTc\&_nc_zt\=23\&_nc_ht\=scontent\.ftrv6-1\.fna\&_nc_gid\=8eYDqzCMcsyqauaMVBKsyw\&oh\=00_AYELuITjf08Ej6_wwC3IT1D0AfLuggE5fcuR8MRR9IC1Ig\&oe\=67F17E76\'\)\] {
-    background-image: url('https://scontent.ftrv6-1.fna.fbcdn.net/v/t39.30808-6/474592688_122193606548060708_8148569151790203459_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pt4n8sSYdu4Q7kNvgEnI5vn&_nc_oc=AdmqAmL9E8F5Lz-K8McNFVu9rjY7NqhZ02j22OpaW2leKpSVm-dbrEQ4x7ZDAl6RoTc&_nc_zt=23&_nc_ht=scontent.ftrv6-1.fna&_nc_gid=8eYDqzCMcsyqauaMVBKsyw&oh=00_AYELuITjf08Ej6_wwC3IT1D0AfLuggE5fcuR8MRR9IC1Ig&oe=67F17E76');
-  }
   .bg-\[url\(\'https\:\/\/thumbs\.dreamstime\.com\/b\/thangassery-lighthouse-cliff-surrounded-palm-trees-big-sea-waves-kollam-beach-kerala-india-red-white-stripe-90512850\.jpg\'\)\] {
     background-image: url('https://thumbs.dreamstime.com/b/thangassery-lighthouse-cliff-surrounded-palm-trees-big-sea-waves-kollam-beach-kerala-india-red-white-stripe-90512850.jpg');
   }
@@ -734,9 +716,6 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
-  .fill-white {
-    fill: var(--color-white);
-  }
   .object-cover {
     object-fit: cover;
   }
@@ -769,6 +748,9 @@
   }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -829,6 +811,9 @@
   .text-\[12px\] {
     font-size: 12px;
   }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
   .text-\[18px\] {
     font-size: 18px;
   }
@@ -840,9 +825,6 @@
   }
   .text-\[30px\] {
     font-size: 30px;
-  }
-  .text-\[35px\] {
-    font-size: 35px;
   }
   .text-\[40px\] {
     font-size: 40px;
@@ -1035,11 +1017,6 @@
   .sm\:top-1\/2 {
     @media (width >= 40rem) {
       top: calc(1/2 * 100%);
-    }
-  }
-  .sm\:right-10 {
-    @media (width >= 40rem) {
-      right: calc(var(--spacing) * 10);
     }
   }
   .sm\:left-1\/2 {

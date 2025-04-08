@@ -1,15 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menuIcon = document.getElementById('menuIcon');
+    const closeIcon = document.getElementById('closeIcon');
     const menu = document.getElementById('menu');
 
     if (menuIcon && menu) { // ✅ Prevents errors if elements don't exist
         menuIcon.addEventListener('click', () => {
-            menu.classList.toggle('-translate-x-full'); // Toggle the class
+            menu.classList.toggle('-translate-y-full'); // Toggle the class
+        });
+        closeIcon.addEventListener('click', () => {
+            menu.classList.toggle('-translate-y-full');
         });
 
         document.addEventListener('click', (event) => {
             if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
-                menu.classList.add('-translate-x-full');
+                menu.classList.add('-translate-y-full');
             }
         });
     }
