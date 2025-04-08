@@ -346,6 +346,9 @@
     width: calc(var(--spacing) * 6);
     height: calc(var(--spacing) * 6);
   }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
@@ -682,6 +685,12 @@
   .bg-\[url\(\'\/static\/images\/img-23\.jpg\'\)\] {
     background-image: url('/static/images/img-23.jpg');
   }
+  .bg-\[url\(\'\/static\/images\/img-28\.jpg\'\)\] {
+    background-image: url('/static/images/img-28.jpg');
+  }
+  .bg-\[url\(\'\/static\/images\/img-29\.jpg\'\)\] {
+    background-image: url('/static/images/img-29.jpg');
+  }
   .bg-\[url\(\'https\:\/\/dynamic-media-cdn\.tripadvisor\.com\/media\/photo-o\/10\/be\/73\/88\/img-20170911-wa0033-largejpg\.jpg\?w\=1100\&h\=600\&s\=1\'\)\] {
     background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/be/73/88/img-20170911-wa0033-largejpg.jpg?w=1100&h=600&s=1');
   }
@@ -714,6 +723,9 @@
   }
   .bg-\[url\(\/static\/images\/img-25\.jpg\)\] {
     background-image: url(/static/images/img-25.jpg);
+  }
+  .bg-\[url\(\/static\/images\/img-30\.jpg\)\] {
+    background-image: url(/static/images/img-30.jpg);
   }
   .bg-\[url\(https\:\/\/images\.mercuryholidays\.co\.uk\/cms\/36796\/44631942-kerala-private-tours\.jpg\?w\=1920\)\] {
     background-image: url(https://images.mercuryholidays.co.uk/cms/36796/44631942-kerala-private-tours.jpg?w=1920);
